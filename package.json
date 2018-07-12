@@ -1,0 +1,26 @@
+{
+  "name": "resume",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@mdx-js/loader": "^0.7.0",
+    "@mdx-js/mdx": "^0.7.1",
+    "papercss": "^1.5.1",
+    "react": "^16.3.2",
+    "react-app-rewired": "^1.5.0",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4",
+    "remark-emoji": "^2.0.1",
+    "remark-images": "^0.8.1"
+  },
+  "scripts": {
+    "now-publish": "npm run clean-build && npm run build && cd build && now && cd ..",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "clean-build": "rm -rf build"
+  },
+  "now": {
+    "alias": "jbee-resume"
+  }
+}
