@@ -6,8 +6,9 @@ module.exports = (config, env) => {
   const babelLoader = getBabelLoader(config.module.rules);
   const { loader, options } = babelLoader;
 
+  // To remove ModuleScopePlugin
+  config.resolve.plugins = [];
   config.module.rules.map(rule => {
-    // This ma
     if (typeof rule.test !== "undefined" || typeof rule.oneOf === "undefined") {
       return rule;
     }
