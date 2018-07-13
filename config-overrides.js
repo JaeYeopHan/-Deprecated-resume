@@ -13,20 +13,20 @@ module.exports = (config, env) => {
     }
 
     rule.oneOf.unshift({
-      test: /\.md?x$/,
+      test: /\.mdx?$/,
       // include: babelLoader.include,
       use: [
         {
           loader,
-          options
+          options,
         },
         {
           loader: "@mdx-js/loader",
           options: {
-            mdPlugins: [emoji, images]
-          }
-        }
-      ]
+            mdPlugins: [emoji, images],
+          },
+        },
+      ],
     });
 
     return rule;
