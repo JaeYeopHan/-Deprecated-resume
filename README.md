@@ -8,6 +8,8 @@ And publish generated resume with [now](https://github.com/zeit/now-cli) on the 
 
 ## Examples
 
+- [sample](https://build-ialtskcwoc.now.sh/)
+  - [source](https://github.com/JaeYeopHan/resume/tree/demo/papercss)
 - [jbee-resume](https://jbee-resume.now.sh/) - _my resume_
 
 ## If you...
@@ -23,9 +25,9 @@ $ npm install
 # For publishing,
 $ npm install -g now
 
-# Change data in `templates.resume.mdx` with markdown syntax.
+# Change data in `templates/resume.md` with markdown syntax.
 $ code .
-# Writing resume in resume.mdx file on your favorite editor.
+# Writing resume in resume.md file on your favorite editor.
 
 # Prepare to publish.
 # In package.json, change the alias to your name.
@@ -39,6 +41,8 @@ $ npm run now-publish
 - This repository is consist of
   - [mdx](https://github.com/mdx-js/mdx)
   - [remark-emoji](https://github.com/rhysd/remark-emoji)
+  - [create-react-app](https://github.com/facebook/create-react-app)
+  - [papercss](https://github.com/papercss/papercss)
 - You can customize template in `components` directory.
 
 ## LICENSE
