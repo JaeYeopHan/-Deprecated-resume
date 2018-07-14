@@ -19,8 +19,5 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
     "clean-build": "rm -rf build"
-  },
-  "now": {
-    "alias": "jbee-resume"
   }
 }

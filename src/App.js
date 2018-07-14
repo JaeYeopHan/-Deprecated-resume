@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Resume from "../templates/resume.md";
+import Resume from "../templates/demo.md";
 import { SubTitle, DivisionLine } from "./components";
 
 import "../node_modules/papercss/dist/paper.min.css";
