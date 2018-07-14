@@ -1,0 +1,9 @@
+.app-button-export {
+  position: absolute;
+  top: 78px;
+  right: 32px;
+}
+
+.container .app-button-export {
+  top: 32px;
+}
