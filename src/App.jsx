@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import html2pdf from "html2pdf.js";
 
 import Resume from "../templates/resume.md";
+import config from "../templates/resumeConfig.json";
+
 import { SubTitle, DivisionLine, Button, Loading } from "./components";
+import { pipe } from "./utils/pipe";
 
 import "./App.css";
 
-const THEME = "papercss";
-const MARGIN_OF_PDF = 0.5;
 const MIN_WIDTH = 760;
-const OWNER = "jbee";
 
 class App extends Component {
   constructor() {
@@ -18,6 +18,19 @@ class App extends Component {
       isLoading: true,
       classNames: "",
     };
+    this.setConfig(config);
+  }
+
+  setConfig(config) {
+    const { owner, theme, pdf } = config;
+
+    if (!owner) {
+      console.error("Not correct owner name in `temaplate/resumeConfig.json`");
+    }
+
+    this.owner = owner || "";
+    this.theme = theme || "";
+    this.pdf = pdf;
   }
 
   async componentDidMount() {
@@ -33,44 +46,37 @@ class App extends Component {
     return await html2pdf()
       .from(this.resumeTemplate)
       .set({
-        margin: MARGIN_OF_PDF,
-        filename: `${OWNER}_resume.pdf`,
+        margin: this.pdf ? this.pdf.margin : 0.5,
+        filename: `${this.owner}_resume.pdf`,
         jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
       })
       .save();
   }
 
-  static applyTheme(base) {
-    switch (THEME) {
+  async applyTheme(base) {
+    switch (this.theme) {
       case "papercss": {
-        return import("../node_modules/papercss/dist/paper.min.css").then(() =>
-          base.concat("paper"),
-        );
+        await import("../node_modules/papercss/dist/paper.min.css");
+        return base.concat("paper");
       }
       default:
         return base;
     }
   }
 
-  static applyContainer(base) {
-    return window.innerWidth > MIN_WIDTH ? base.concat("container") : base;
-  }
-
   async reduceCSS() {
     const base = ["margin-top-large", "margin-bottom-large"];
-    const base2 = await App.applyTheme(base);
-    const base3 = App.applyContainer(base2);
-    const classNames = base3.join(" ");
+    const results = await pipe(
+      base => (window.innerWidth > MIN_WIDTH ? base.concat("container") : base),
+      await this.applyTheme.bind(this),
+    )(base);
 
-    return classNames;
+    return results.join(" ");
   }
 
   render() {
     const { isLoading, classNames } = this.state;
-
-    return isLoading ? (
-      <Loading />
-    ) : (
+    const ResumeTemplate = (
       <div className={classNames}>
         <Button exportToPdf={async () => this.exportToPdf()} />
         <div ref={ref => (this.resumeTemplate = ref)}>
@@ -78,6 +84,8 @@ class App extends Component {
         </div>
       </div>
     );
+
+    return isLoading ? <Loading /> : ResumeTemplate;
   }
 }
 
