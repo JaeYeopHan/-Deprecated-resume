@@ -3,8 +3,9 @@
 [![](https://badgen.now.sh/badge/published/now/purple)](https://zeit.co/about)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-Generate resume based on only **markdown syntax** with **emoji**.
-And publish generated resume with [now](https://github.com/zeit/now-cli) on the web.
+- Generate resume based on only **markdown syntax** with **emoji**.
+- Support feature to export pdf by click.
+- Publish generated resume with [now](https://github.com/zeit/now-cli) on the web.
 
 ## Examples
 
@@ -45,6 +46,7 @@ $ npm run now-publish
   - [mdx](https://github.com/mdx-js/mdx)
   - [remark-emoji](https://github.com/rhysd/remark-emoji)
   - [create-react-app](https://github.com/facebook/create-react-app)
+  - [html2pdf.js](https://github.com/eKoopmans/html2pdf)
 - You can customize...
   - template in `components` directory.
   - config in `templates/resumeConfig.json` directory.
