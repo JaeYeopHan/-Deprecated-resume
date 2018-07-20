@@ -68,7 +68,7 @@ I'm FrontEnd developer who loves TypeScript, VanillaJS and React. I have recentl
 
 ### :eggplant: Presentation
 
-#### [GDG Campus 2018.02 Meetup](https://speakerdeck.com/jaeyeophan/gdg-campus-2018-meetup-balpyojaryo-hamgge-ilhago-sipeun-gaebalja)
+#### [GDG Campus 2018.02 Meetup (Korean) - Developers who want to work together](https://speakerdeck.com/jaeyeophan/gdg-campus-2018-meetup-balpyojaryo-hamgge-ilhago-sipeun-gaebalja)
 
 Introduce "development" that I learned in the field. I define 'coding' to be narrower and share what I felt that 'coding is only part of the process of developing something.' If possible, I will talk about the direction to move towards 'the developer we want to work with' based on this content.
 
