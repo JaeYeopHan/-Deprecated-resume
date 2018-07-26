@@ -1,7 +1,8 @@
-# Resume Template
+# Resume
 
 [![](https://badgen.now.sh/badge/published/now/purple)](https://zeit.co/about)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
 - Generate resume based on only **markdown syntax** with **emoji**.
 - Support feature to export pdf by click.
@@ -23,18 +24,16 @@ If you want to create your own resume with using this repository, follow the ste
 # Setup
 $ git clone https://github.com/JaeYeopHan/resume my-resume
 $ cd my-resume
-$ npm install
+$ npm run bs
 
 # For publishing,
 $ npm install -g now
 
-# Change data in `templates/resume.md` with markdown syntax.
 $ code .
-# Writing resume in resume.md file on your favorite editor.
-# Customize theme in resumeConfig.json
+# Writing resume in `packages/resume-data/resume.md` file on your favorite editor with markdown syntax.
+# Customize theme in `packages/resume-data/resumeConfig.json`.
 
 # Prepare to publish.
-# In package.json, change the alias to your name.
 $ npm run now-publish
 ```
 
@@ -51,9 +50,10 @@ $ npm run now-publish
   - template in `components` directory.
   - config in `templates/resumeConfig.json` directory.
 
-### Thanks for theme
+### Supported Theme
 
 - [papercss](https://github.com/papercss/papercss)
+-
 
 ## LICENSE
 
