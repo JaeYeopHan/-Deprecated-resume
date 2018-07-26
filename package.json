@@ -1,0 +1,26 @@
+{
+  "name": "resume",
+  "version": "0.1.0",
+  "description": "Integrated repository of Resume generator, template.",
+  "main": "index.js",
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  },
+  "scripts": {
+    "bs": "lerna bootstrap",
+    "now-publish": "cd packages && cd resume-template && npm run clean-build && npm run build && cd build && now && cd .. && npm run clean-build && cd .. && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaeYeopHan/resume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Jbee (ljyhanll@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JaeYeopHan/resume/issues"
+  },
+  "homepage": "https://github.com/JaeYeopHan/resume#readme"
+}

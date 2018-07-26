@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import html2pdf from "html2pdf.js";
 
-import Resume from "../templates/resume.md";
-import config from "../templates/resumeConfig.json";
+import Resume from "../../resume-data/resume.md";
+import config from "../../resume-data/resumeConfig.json";
 
 import { SubTitle, DivisionLine, Button, Loading } from "./components";
 import { pipe } from "./utils/pipe";
