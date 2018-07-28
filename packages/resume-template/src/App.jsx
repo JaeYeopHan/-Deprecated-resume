@@ -6,6 +6,7 @@ import config from "../../resume-data/resumeConfig.json";
 
 import { SubTitle, DivisionLine, Button, Loading } from "./components";
 import { pipe } from "./utils/pipe";
+import { delay } from "./utils/Time";
 
 import "./App.css";
 
@@ -35,6 +36,7 @@ class App extends Component {
 
   async componentDidMount() {
     const classNames = await this.reduceCSS();
+    await delay(3000);
 
     this.setState({
       isLoading: false,
@@ -76,6 +78,7 @@ class App extends Component {
 
   render() {
     const { isLoading, classNames } = this.state;
+    const LoadingTemplate = <Loading />;
     const customComponent = { h4: SubTitle, hr: DivisionLine };
     const ResumeTemplate = (
       <div className={classNames}>
@@ -86,7 +89,7 @@ class App extends Component {
       </div>
     );
 
-    return isLoading ? <Loading /> : ResumeTemplate;
+    return isLoading ? LoadingTemplate : ResumeTemplate;
   }
 }
 
