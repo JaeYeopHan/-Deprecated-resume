@@ -23,5 +23,9 @@
   },
   "now": {
     "alias": "jbee-resume"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1"
   }
 }
