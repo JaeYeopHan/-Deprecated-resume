@@ -76,11 +76,12 @@ class App extends Component {
 
   render() {
     const { isLoading, classNames } = this.state;
+    const customComponent = { h4: SubTitle, hr: DivisionLine };
     const ResumeTemplate = (
       <div className={classNames}>
         <Button exportToPdf={async () => this.exportToPdf()} />
         <div ref={ref => (this.resumeTemplate = ref)}>
-          <Resume components={{ h4: SubTitle, hr: DivisionLine }} />
+          <Resume components={customComponent} />
         </div>
       </div>
     );
