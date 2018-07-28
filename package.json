@@ -8,7 +8,7 @@
   },
   "scripts": {
     "bs": "lerna bootstrap",
-    "now-publish": "cd packages && cd resume-template && npm run clean-build && npm run build && cd build && now && cd .. && npm run clean-build && cd .. && cd .."
+    "resume-publish": "cd packages/resume-template && npm run now-publish && cd .. && cd .."
   },
   "repository": {
     "type": "git",
