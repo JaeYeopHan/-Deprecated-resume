@@ -34,7 +34,7 @@ $ code .
 # Customize theme in `packages/resume-data/resumeConfig.json`.
 
 # Prepare to publish.
-$ npm run now-publish
+$ npm run resume-publish
 ```
 
 > It's done!
@@ -53,8 +53,31 @@ $ npm run now-publish
 ### Supported Theme
 
 - [papercss](https://github.com/papercss/papercss)
--
+
+## Development Installation
+
+```bash
+$ git clone https://github.com/JaeYeopHan/resume resume
+$ cd resume
+$ npm run bs # lerna bootstrap
+$ npm start
+
+# Working
+$ git checkout -b [YOUR BRANCH NAME]
+# After working
+$ npm test
+# Register Pull Request
+```
+
+## Contribute
+
+> Welcome for contributing :prey:
 
 ## LICENSE
 
 [MIT](https://github.com/JaeYeopHan/resume/blob/master/LICENSE)
+
+<p align="center">✌️</p>
+<p align="center">
+<sub><sup>A little project by <a href="https://jbee-resume.now.sh/">@Jbee</a></sup></sub>
+</p>
