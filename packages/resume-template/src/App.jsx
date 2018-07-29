@@ -1,21 +1,21 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 
-import ResumeEnglish from "../../resume-data/resume-en.md";
-import ResumeKorean from "../../resume-data/resume-ko.md";
+import ResumeEnglish from "../../resume-data/resume-ENG.md";
+import ResumeKorean from "../../resume-data/resume-KOR.md";
 import config from "../../resume-data/resumeConfig.json";
 
 import * as Components from "./components";
-import { pipe, delay, exportToPdfFile } from "./utils";
+import { pipe, delay, exportToPdfFile, isSupport } from "./utils";
 
 import "./App.css";
 
 const MIN_WIDTH = 760;
 
-class App extends Component {
+export default class App extends Component {
   state = {
     isLoading: true,
     classNames: "",
-    language: "en",
+    language: "ENG",
   };
 
   customComponents = {
@@ -27,12 +27,11 @@ class App extends Component {
   constructor() {
     super();
 
-    const { owner, theme, pdf } = config;
+    const { owner, theme, pdf, languages } = config;
 
-    if (!owner) {
-      console.error("Not correct owner name in `temaplate/resumeConfig.json`");
-    }
+    !owner && console.error("Not correct owner name in `resumeConfig.json`");
 
+    this.languages = languages;
     this.owner = owner || "";
     this.theme = theme || "";
     this.pdf = pdf;
@@ -71,45 +70,51 @@ class App extends Component {
 
   buildResumeTemplate() {
     const { language } = this.state;
+
+    !isSupport(this.languages, language) &&
+      console.error("Not correct language in `resumeConfig.json`");
+
+    let ResumeTemplate;
     switch (language) {
       case "ENG":
-        return ResumeEnglish;
+        ResumeTemplate = ResumeEnglish;
+        break;
       case "KOR":
-        return ResumeKorean;
+        ResumeTemplate = ResumeKorean;
+        break;
       default:
-        return ResumeEnglish;
+        ResumeTemplate = ResumeEnglish;
     }
+    return <ResumeTemplate components={this.customComponents} />;
   }
 
   render() {
-    const { isLoading, classNames } = this.state;
+    const { isLoading, classNames, language: activeLanguage } = this.state;
     const LoadingTemplate = <Components.Loading />;
-    const LanguageButtons = (
-      <Fragment>
-        <Components.BadgeSecondary
-          contents={`KOR`}
-          onClick={language => this.setState({ language })}
-        />
-        <Components.BadgeSecondary
-          contents={`ENG`}
-          onClick={language => this.setState({ language })}
-        />
-      </Fragment>
+    const LanguageButtons = this.languages.map((lang, idx) => (
+      <Components.BadgeSecondary
+        key={idx}
+        contents={lang}
+        activeLanguage={activeLanguage}
+        onClick={language => this.setState({ language })}
+      />
+    ));
+    const ExportPdfButton = (
+      <Components.Button
+        onClick={async () =>
+          exportToPdfFile(this.resumeTemplate, {
+            margin: this.pdf.margin,
+            owner: this.owner,
+          })
+        }
+      />
     );
-    const ResumeTemplate = this.buildResumeTemplate();
     const Resume = (
       <div className={classNames}>
         {LanguageButtons}
-        <Components.Button
-          onClick={async () =>
-            exportToPdfFile(this.resumeTemplate, {
-              margin: this.pdf.margin,
-              owner: this.owner,
-            })
-          }
-        />
+        {ExportPdfButton}
         <div ref={ref => (this.resumeTemplate = ref)}>
-          <ResumeTemplate components={this.customComponents} />
+          {this.buildResumeTemplate()}
         </div>
       </div>
     );
@@ -117,5 +122,3 @@ class App extends Component {
     return isLoading ? LoadingTemplate : Resume;
   }
 }
-
-export default App;
