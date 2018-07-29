@@ -32,9 +32,10 @@ $ npm install -g now
 $ code .
 # Writing resume in `packages/resume-data/resume.md` file on your favorite editor with markdown syntax.
 # Customize theme in `packages/resume-data/resumeConfig.json`.
+# Customize now.json for deployment setting.
 
 # Prepare to publish.
-$ npm run resume-publish
+$ npm run publish:resume
 ```
 
 > It's done!
