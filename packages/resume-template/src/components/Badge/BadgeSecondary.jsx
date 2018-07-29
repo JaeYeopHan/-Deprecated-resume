@@ -1,11 +1,13 @@
 import React from "react";
 
-export const BadgeSecondary = ({ contents, onClick }) => (
-  <span
-    className="badge secondary"
-    style={{ margin: `4px` }}
-    onClick={() => onClick(contents)}
-  >
-    {contents}
-  </span>
-);
+export const BadgeSecondary = ({ contents, activeLanguage, onClick }) => {
+  const isActive = contents === activeLanguage;
+  const classes = isActive ? "badge secondary" : "badge";
+  const style = { margin: `4px` };
+
+  return (
+    <span className={classes} style={style} onClick={() => onClick(contents)}>
+      {contents}
+    </span>
+  );
+};
