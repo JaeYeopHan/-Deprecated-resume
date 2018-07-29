@@ -1,6 +1,7 @@
 {
   "owner": "jbee",
   "theme": "papercss",
+  "languages": ["KOR", "ENG"],
   "pdf": {
     "margin": 0.5
   }
