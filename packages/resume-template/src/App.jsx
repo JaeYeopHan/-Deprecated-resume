@@ -1,28 +1,32 @@
-import React, { Component } from "react";
-import html2pdf from "html2pdf.js";
+import React, { Component, Fragment } from "react";
 
-import Resume from "../../resume-data/resume.md";
+import ResumeEnglish from "../../resume-data/resume-en.md";
+import ResumeKorean from "../../resume-data/resume-ko.md";
 import config from "../../resume-data/resumeConfig.json";
 
-import { SubTitle, DivisionLine, Button, Loading } from "./components";
-import { pipe } from "./utils/pipe";
-import { delay } from "./utils/Time";
+import * as Components from "./components";
+import { pipe, delay, exportToPdfFile } from "./utils";
 
 import "./App.css";
 
 const MIN_WIDTH = 760;
 
 class App extends Component {
+  state = {
+    isLoading: true,
+    classNames: "",
+    language: "en",
+  };
+
+  customComponents = {
+    h4: Components.SubTitle,
+    hr: Components.DivisionLine,
+    inlineCode: Components.Badge,
+  };
+
   constructor() {
     super();
-    this.state = {
-      isLoading: true,
-      classNames: "",
-    };
-    this.setConfig(config);
-  }
 
-  setConfig(config) {
     const { owner, theme, pdf } = config;
 
     if (!owner) {
@@ -42,17 +46,6 @@ class App extends Component {
       isLoading: false,
       classNames,
     });
-  }
-
-  async exportToPdf() {
-    return await html2pdf()
-      .from(this.resumeTemplate)
-      .set({
-        margin: this.pdf ? this.pdf.margin : 0.5,
-        filename: `${this.owner}_resume.pdf`,
-        jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
-      })
-      .save();
   }
 
   async applyTheme(base) {
@@ -76,23 +69,52 @@ class App extends Component {
     return results.join(" ");
   }
 
+  buildResumeTemplate() {
+    const { language } = this.state;
+    switch (language) {
+      case "ENG":
+        return ResumeEnglish;
+      case "KOR":
+        return ResumeKorean;
+      default:
+        return ResumeEnglish;
+    }
+  }
+
   render() {
     const { isLoading, classNames } = this.state;
-    const LoadingTemplate = <Loading />;
-    const customComponent = {
-      h4: SubTitle,
-      hr: DivisionLine,
-    };
-    const ResumeTemplate = (
+    const LoadingTemplate = <Components.Loading />;
+    const LanguageButtons = (
+      <Fragment>
+        <Components.BadgeSecondary
+          contents={`KOR`}
+          onClick={language => this.setState({ language })}
+        />
+        <Components.BadgeSecondary
+          contents={`ENG`}
+          onClick={language => this.setState({ language })}
+        />
+      </Fragment>
+    );
+    const ResumeTemplate = this.buildResumeTemplate();
+    const Resume = (
       <div className={classNames}>
-        <Button onClick={async () => this.exportToPdf()} />
+        {LanguageButtons}
+        <Components.Button
+          onClick={async () =>
+            exportToPdfFile(this.resumeTemplate, {
+              margin: this.pdf.margin,
+              owner: this.owner,
+            })
+          }
+        />
         <div ref={ref => (this.resumeTemplate = ref)}>
-          <Resume components={customComponent} />
+          <ResumeTemplate components={this.customComponents} />
         </div>
       </div>
     );
 
-    return isLoading ? LoadingTemplate : ResumeTemplate;
+    return isLoading ? LoadingTemplate : Resume;
   }
 }
 
