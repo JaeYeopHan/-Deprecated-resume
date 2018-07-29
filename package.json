@@ -10,7 +10,7 @@
     "bs": "lerna bootstrap",
     "test": "cd packages/resume-template && npm test",
     "start": "cd packages/resume-template && npm start",
-    "resume-publish": "cd packages/resume-template && npm run now-publish && cd .. && cd .."
+    "publish:resume": "cd packages/resume-template && npm run publish:resume"
   },
   "repository": {
     "type": "git",

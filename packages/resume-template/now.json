@@ -1,0 +1,8 @@
+{
+  "name": "jbee-resume",
+  "alias": "jbee-resume",
+  "dependencies": {
+    "micro": "latest"
+  },
+  "public": true
+}
