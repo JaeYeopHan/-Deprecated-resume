@@ -4,9 +4,9 @@
 
 <div align="center">
 
-I'm FrontEnd developer who loves TypeScript, VanillaJS and React. I have recently been interested in documentation, productivity and education.
+타입스크립트, 자바스크립트 그리고 리액트를 좋아하하는 프론트엔드 엔지니어입니다. 최근에는 문서화, 생산성, 클린 코드에 관심이 많습니다.
 
-`#TypeScript` `#VanillaJS` `#React` `#Education` `#Clean Code` `#Productivity`
+`#TypeScript` `#VanillaJS` `#React` `#Productivity` `#Documentation` `#Clean Code`
 
 </div>
 
@@ -22,72 +22,95 @@ I'm FrontEnd developer who loves TypeScript, VanillaJS and React. I have recentl
 
 #### NAVER Corporation
 
-|                 |                                                                                                                                                                                                       |
-| --------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **period**      | 17.07 ~ Current                                                                                                                                                                                       |
-| **position**    | FrontEnd Developer                                                                                                                                                                                    |
-| **description** | Currently, develop UI of integrated search belonging to FEplatform team. I have developed a service called SmartAround, which is a location based service that operates mainly on Naver applications. |
-| projects        | (wip)                                                                                                                                                                                                 |
-|                 |                                                                                                                                                                                                       |
+|                 |                                                                                                         |
+| --------------: | ------------------------------------------------------------------------------------------------------- |
+| **period**      | 17.07 ~ Current                                                                                         |
+| **position**    | 프론트엔드 엔지니어                                                                                              |
+| **description** | 현재, FE플랫폼 팀에서 통합 검색의 UI를 개발하고 있습니다. 스마트 어라운드, 스마트 보이스 등의 서비스를 맡아 개발했으며, 팀 내 개발환경 세팅 도구를 담당하여 개발하고 있습니다. |
+| projects        | SmartAround, SmartVoice, generator-sau-webpack                                                          |
+|                 |                                                                                                         |
 
 <br/>
 
 #### LINE Corporation
 
-|                 |                                                                                                                                                                                                                                      |
-| --------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **period**      | 17.01 ~ 17.02                                                                                                                                                                                                                        |
-| **position**    | Server Developer Intern                                                                                                                                                                                                              |
-| **description** | Develop redis operation chatbot based on LINE messenger. During this project, I was able to get a better understanding of the backend by looking at the technology stack that makes up the backend for a short period of two months. |
-| **project**     | (wip)                                                                                                                                                                                                                                |
-|                 |                                                                                                                                                                                                                                      |
+|                 |                                                                                     |
+| --------------: | ----------------------------------------------------------------------------------- |
+| **period**      | 17.01 ~ 17.02                                                                       |
+| **position**    | 백엔드 엔지니어 인턴                                                                         |
+| **description** | 2달 동안의 인턴 기간동안 라인 메신저를 기반으로 동작하는 챗봇을 만들었습니다. Redis 저장소에 저장되어 있는 데이터를 조회하기 위한 챗봇입니다. |
+| **project**     | REDIE-OPS-BOT(http://bit.ly/2BzJiUl)                                                |
+|                 |                                                                                     |
 
 ---
 
 ### :banana: Tech Experience
 
-#### [SmartAround Service](https://s.search.naver.com/p/around/search.naver)
+#### SmartAround Service
 
-The SmartAround is a service that provides users with necessary information based on their location. I participated in this project as a front-end engineer, and I was more concerned with UX than anything else. One of the most important aspects of the project was that it could be maintained without any problems even if the project maintainer changed. That's why I have written a code that is highly readable and document for supplying it. To overcome these problems, TypeScript was adopted in this proejct. Although there was some difficulty, it was applied successfully, and all developers participating in the project were satisfied with TypeScript.
+- https://s.search.naver.com/p/around/search.naver
+- 위치 기반 정보 제공 서비스
+- 프론트엔드 엔지니어로 프로젝트 참여
+- TypeScript, Webpack, lerna
+- UX & 성능 고려 (스크롤 복원 / 이미지, 스크립트 레이지 로딩 / 컴포넌트 레이지 초기화)
 
-Since it was a project that I participated in from the initial design, it was an opportunity to consider the project's architecture. Also, because we had to expose a lot of information at the same time on a small mobile screen, there were many performance considerations. Animation also took a lot of time to give the user a smooth and natural animation.
+
 
 #### Development Environment scaffolding tool
 
-I developed a scaffolding tool as one of the means to improve development productivity. This project is based on the Yeoman Generator and scaffolds development projects based on the templates that are used in the team. As I proceeded through this project, I had an opportunity to deeply understand the webpack and the complex development environment that constituted the recent front-end.
-
-Considering a more efficient development environment, I have developed additional webpack plugin and CLI tools. I spent a great deal of effort to improve my productivity by making it a tool of repetitive tasks.
+- Yeoman Generator 기반의 개발 환경 scaffolding 도구
+- Scaffold ES6, TypeScript project based webpack
+- 데모 페이지 생성을 위한 Webpack plugin
+- HTML을 mocking 하기 위한 Webpack plugin
+- 개인 토이 프로젝트용 (https://github.com/JaeYeopHan/generator-toy-project)
 
 
 ---
+
 
 ### :tangerine: Blog
 
-#### [Tech blog](https://jaeyeophan.github.io)
+#### Tech blog: https://jaeyeophan.github.io
 
-> This blog is a github.io blog about JavaScript and the front-end field, and various tutorials are mainly posted.
+> JavaScript와 프론트엔드 분야의 튜토리얼을 주로 포스팅하는 github 블로그입니다..
 
-#### [Medium](https://medium.com/@Jbee_)
+#### Medium: https://medium.com/@Jbee_
 
-> This blog is medium blog which writes essay about development.
+> 개발과 관련된 에세이를 주로 작성하는 블로그입니다.
 
-#### [Tistory blog](http://asfirstalways.tistory.com/)
+#### Tistory blog: http://asfirstalways.tistory.com/
 
-> This blog is a tistory blog that summarizes the whole development.
+> CS 전반에 대한 내용을 정리한 Tistory 블로그입니다. 현재는 더이상 운영하지 않습니다.
+
 
 ---
+
 
 ### :watermelon: Project
 
-(WIP)
+#### octodirect - chrome extension
+
+- Chrome web store link: (https://chrome.google.com/webstore/detail/octodirect/fmhgcellhhleloebmhbmdncogdddkkag?hl=ko)
+- GitHub repository link : (https://github.com/JaeYeopHan/octodirect)
+- React, TypeScript, Redux, Redux-saga
+
+자신이 생성했거나, 관리하고 있는 저장소, 이전에 방문했던 저장소, 자신이 star를 누른 저장소 등을 curating하여 단축키를 통해 바로 이동할 수 있는 chrome extension 입니다.
+
+단축키를 통해 해당 extension을 열면 여러 소스로부터 저장소의 목록을 불러오고 이를 보여줍니다. 저장소의 이름을 입력하게 되면 필터링하여 쉽게 저장소의 링크를 얻을 수 있고, 엔터키로 바로 이동까지 할 수 있습니다.
+
+크롬 익스텐션의 versioning 하고 배포하는 부분이 번거로워, 나름의 배포 스크립트를 만들어서 사용 중입니다. 해당 스크립트는 GitHub Repository의 'scripts/deploy.js'에서 확인하실 수 있습니다.
+
 
 ---
 
+
 ### :eggplant: Presentation
 
-#### [GDG Campus 2018.02 Meetup (Korean) - Developers who want to work together](https://speakerdeck.com/jaeyeophan/gdg-campus-2018-meetup-balpyojaryo-hamgge-ilhago-sipeun-gaebalja)
+#### GDG Campus 2018.02 Meetup (Korean) - Developers who want to work together
 
-Introduce "development" that I learned in the field. I define 'coding' to be narrower and share what I felt that 'coding is only part of the process of developing something.' If possible, I will talk about the direction to move towards 'the developer we want to work with' based on this content.
+> https://speakerdeck.com/jaeyeophan/gdg-campus-2018-meetup-balpyojaryo-hamgge-ilhago-sipeun-gaebalja
+
+현업에서 배운 '개발'을 소개했습니다. '코딩'을 좁은 범위로 정의하고 개발이라는 과정에 있어서 코딩은 일부분이라는 내용입니다. 여기서 다 나아가 함께 일하고 싶은 개발자는 무엇일까에 대해 이야기를 나눴습니다.
 
 ---
 
@@ -95,51 +118,63 @@ Introduce "development" that I learned in the field. I define 'coding' to be nar
 
 #### [DEVLOG Facebook page](https://www.facebook.com/Jbee.dev/)
 
-|                 |                                                                                                                                                                    |
-| --------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **period**      | 17.03 ~ current                                                                                                                                                    |
-| **description** | I have a Facebook page called DEVLOG that contains development resources for preliminary and junior developers, as well as tutorials related to the web front end. |
-|                 |                                                                                                                                                                    |
+|                 |                                                                            |
+| --------------: | -------------------------------------------------------------------------- |
+| **period**      | 17.03 ~ current                                                            |
+| **description** | DEVLOG라는 이름의 페이스북 페이지를 운영하고 있습니다. 주로 주니어 개발자, 프론트엔드 개발자를 위한 좋은 자료들을 공유합니다. |
+|                 |                                                                            |
 
 
 #### [FEConf Organizer](https://2017.feconf.kr/)
 
-|                 |                                                                                                           |
-| --------------: | --------------------------------------------------------------------------------------------------------- |
-| **period**      | 18.06. ~ current.                                                                                         |
-| **description** | One of FEConf's organizers is the front-end conference hosted by Facebook's 'Frontend Development Group'. |
-|                 |                                                                                                           |
+|                 |                                                        |
+| --------------: | ------------------------------------------------------ |
+| **period**      | 18.06. ~ current.                                      |
+| **description** | 페이스북 그룹인 '프론트엔드 개발 그룹'의 운영진이며 FEConf라는 컨퍼런스의 오거나이저입니다. |
+|                 |                                                        |
 
 
 #### [TypeScript Korea Admin](https://www.facebook.com/groups/TSKorea/)
 
-|                 |                                                                                                   |
-| --------------: | ------------------------------------------------------------------------------------------------- |
-| **period**      | 17.11 ~ current                                                                                   |
-| **description** | I'm one of the leading members of the Facebook group to promote the language typescript to Korea. |
-|                 |                                                                                                   |
+|                 |                                                      |
+| --------------: | ---------------------------------------------------- |
+| **period**      | 17.11 ~ current                                      |
+| **description** | 국내에 타입스크립트 홍보를 위한 페이스북 그룹, TypeScript Korea의 운영진입니다. |
+|                 |                                                      |
 
 #### [React Seoul Organizer](http://seoul.reactjs.kr/)
 
-|                 |                                                                                               |
-| --------------: | --------------------------------------------------------------------------------------------- |
-| **period**      | 17.09. ~ 17.12.                                                                               |
-| **description** | I participated as an organizer to plan and prepare seminar for only React called React Seoul. |
-|                 |                                                                                               |
+|                 |                                                |
+| --------------: | ---------------------------------------------- |
+| **period**      | 17.09. ~ 17.12.                                |
+| **description** | React Seoul이라는 react만을 위한 컨퍼런스의 오거나이저로 참여했습니다. |
+|                 |                                                |
 
 ---
 
 ### :grapes: Lectures
 
-#### [ECMAScript 2016](https://www.slideshare.net/JaeYeopHan/es6-1-let-const)
+#### ECMAScript 2016
+> https://www.slideshare.net/JaeYeopHan/es6-1-let-const
 
-> I taught ECMAScript 2016 in-house study.
+사내에서 진행한 자바스크립트 강의 자료입니다.
 
-#### [TypeScript Tutorial](https://www.slideshare.net/JaeYeopHan/intro-typescript-playground)
+#### TypeScript Tutorial
+> https://www.slideshare.net/JaeYeopHan/intro-typescript-playground
 
-> I taught TypeScript in-house study.
+사내에서 진행한 타입스크립트 강의 자료입니다.
+
 
 ---
+
+
+### :melon: Skills
+
+> TypeScript, HTML/CSS/JavaScript(ES6+), Node.js, git.
+
+
+---
+
 
 ### :peach: Education
 
@@ -149,13 +184,13 @@ Introduce "development" that I learned in the field. I define 'coding' to be nar
 | ---------: | ------------------ |
 | **period** | 16.03 ~ 17.09      |
 | **major**  | Web UI programming |
-| **status** | completion         |
+| **status** | 수료                 |
 |            |                    |
 
 ---
 
 <div align="center">
 
-_Thank you for reading my resume. If you want to contact me, Please send me an email._
+_감사합니다._
 
 </div>

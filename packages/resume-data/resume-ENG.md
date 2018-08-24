@@ -4,9 +4,9 @@
 
 <div align="center">
 
-I'm FrontEnd developer who loves TypeScript, VanillaJS and React. I have recently been interested in documentation, productivity and education.
+I'm FrontEnd engineer who loves TypeScript, VanillaJS and React. I have recently been interested in documentation, productivity, clean code.
 
-`#TypeScript` `#VanillaJS` `#React` `#Education` `#Clean Code` `#Productivity`
+`#TypeScript` `#VanillaJS` `#React` `#Productivity` `#Documentation` `#Clean Code`
 
 </div>
 
@@ -22,25 +22,25 @@ I'm FrontEnd developer who loves TypeScript, VanillaJS and React. I have recentl
 
 #### NAVER Corporation
 
-|                 |                                                                                                                                                                                                       |
-| --------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **period**      | 17.07 ~ Current                                                                                                                                                                                       |
-| **position**    | FrontEnd Developer                                                                                                                                                                                    |
-| **description** | Currently, develop UI of integrated search belonging to FEplatform team. I have developed a service called SmartAround, which is a location based service that operates mainly on Naver applications. |
-| projects        | (wip)                                                                                                                                                                                                 |
-|                 |                                                                                                                                                                                                       |
+|                 |                                                                                                                                                                             |
+| --------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **period**      | 17.07 ~ Current                                                                                                                                                             |
+| **position**    | FrontEnd Engineer                                                                                                                                                           |
+| **description** | Currently, develop UI of integrated search belonging to FEplatform team. I have developed a service called SmartAround, SmartVoice, development-environment-generator tool. |
+| projects        | SmartAround, SmartVoice, generator-sau-webpack                                                                                                                              |
+|                 |                                                                                                                                                                             |
 
 <br/>
 
 #### LINE Corporation
 
-|                 |                                                                                                                                                                                                                                      |
-| --------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **period**      | 17.01 ~ 17.02                                                                                                                                                                                                                        |
-| **position**    | Server Developer Intern                                                                                                                                                                                                              |
-| **description** | Develop redis operation chatbot based on LINE messenger. During this project, I was able to get a better understanding of the backend by looking at the technology stack that makes up the backend for a short period of two months. |
-| **project**     | (wip)                                                                                                                                                                                                                                |
-|                 |                                                                                                                                                                                                                                      |
+|                 |                                                          |
+| --------------: | -------------------------------------------------------- |
+| **period**      | 17.01 ~ 17.02                                            |
+| **position**    | BackEnd Developer Intern                                 |
+| **description** | Develop redis operation chatbot based on LINE messenger. |
+| **project**     | REDIE-OPS-BOT(http://bit.ly/2BzJiUl)                     |
+|                 |                                                          |
 
 ---
 
@@ -48,44 +48,65 @@ I'm FrontEnd developer who loves TypeScript, VanillaJS and React. I have recentl
 
 #### [SmartAround Service](https://s.search.naver.com/p/around/search.naver)
 
-The SmartAround is a service that provides users with necessary information based on their location. I participated in this project as a front-end engineer, and I was more concerned with UX than anything else. One of the most important aspects of the project was that it could be maintained without any problems even if the project maintainer changed. That's why I have written a code that is highly readable and document for supplying it. To overcome these problems, TypeScript was adopted in this proejct. Although there was some difficulty, it was applied successfully, and all developers participating in the project were satisfied with TypeScript.
-
-Since it was a project that I participated in from the initial design, it was an opportunity to consider the project's architecture. Also, because we had to expose a lot of information at the same time on a small mobile screen, there were many performance considerations. Animation also took a lot of time to give the user a smooth and natural animation.
+- https://s.search.naver.com/p/around/search.naver
+- Service that provide information based on location
+- Participated in this project as a front-end engineer
+- TypeScript, Webpack, lerna
+- UX & Performance (Scroll Restoration / image, script lazy load / lazy initialize component)
 
 #### Development Environment scaffolding tool
 
-I developed a scaffolding tool as one of the means to improve development productivity. This project is based on the Yeoman Generator and scaffolds development projects based on the templates that are used in the team. As I proceeded through this project, I had an opportunity to deeply understand the webpack and the complex development environment that constituted the recent front-end.
-
-Considering a more efficient development environment, I have developed additional webpack plugin and CLI tools. I spent a great deal of effort to improve my productivity by making it a tool of repetitive tasks.
+- Development enviornment scaffolding tool based Yeoman Generator
+- Scaffold ES6, TypeScript project based webpack
+- Webpack plugin for generating Demo page
+- Webpack plugin for mocking HTML code snippets
+- Personal tool for toy project (https://github.com/JaeYeopHan/generator-toy-project)
 
 
 ---
+
 
 ### :tangerine: Blog
 
-#### [Tech blog](https://jaeyeophan.github.io)
+#### Tech blog: https://jaeyeophan.github.io
 
 > This blog is a github.io blog about JavaScript and the front-end field, and various tutorials are mainly posted.
 
-#### [Medium](https://medium.com/@Jbee_)
+#### Medium: https://medium.com/@Jbee_
 
 > This blog is medium blog which writes essay about development.
 
-#### [Tistory blog](http://asfirstalways.tistory.com/)
+#### Tistory blog: http://asfirstalways.tistory.com
 
 > This blog is a tistory blog that summarizes the whole development.
 
+
 ---
+
 
 ### :watermelon: Project
 
-(WIP)
+#### octodirect - chrome extension
+
+- Chrome web store link: (https://chrome.google.com/webstore/detail/octodirect/fmhgcellhhleloebmhbmdncogdddkkag?hl=ko)
+- GitHub repository link : (https://github.com/JaeYeopHan/octodirect)
+- React, TypeScript, Redux, Redux-saga
+
+It is a chrome extension that allows you to curate the GitHub repository you created or managed, you visited before, you clicked the star, and go directly through the shortcut. 
+
+Opening the extension through the shortcut key brings up a list of repositories from multiple sources and shows them. Once you enter the name of the repository, you can easily get links to the repository by filtering it, and you can even go straight to the Enter key.
+
+Versioning and distribution of Chrome extensions is cumbersome. So I am using my own deployment script. This script can be found in 'scripts / deploy.js' in this repository.
+
 
 ---
 
+
 ### :eggplant: Presentation
 
-#### [GDG Campus 2018.02 Meetup (Korean) - Developers who want to work together](https://speakerdeck.com/jaeyeophan/gdg-campus-2018-meetup-balpyojaryo-hamgge-ilhago-sipeun-gaebalja)
+#### GDG Campus 2018.02 Meetup (Korean) - Developers who want to work together
+
+> https://speakerdeck.com/jaeyeophan/gdg-campus-2018-meetup-balpyojaryo-hamgge-ilhago-sipeun-gaebalja
 
 Introduce "development" that I learned in the field. I define 'coding' to be narrower and share what I felt that 'coding is only part of the process of developing something.' If possible, I will talk about the direction to move towards 'the developer we want to work with' based on this content.
 
@@ -131,15 +152,27 @@ Introduce "development" that I learned in the field. I define 'coding' to be nar
 
 ### :grapes: Lectures
 
-#### [ECMAScript 2016](https://www.slideshare.net/JaeYeopHan/es6-1-let-const)
+#### ECMAScript 2016
+> https://www.slideshare.net/JaeYeopHan/es6-1-let-const
 
-> I taught ECMAScript 2016 in-house study.
+I taught ECMAScript 2016 in-house study.
 
-#### [TypeScript Tutorial](https://www.slideshare.net/JaeYeopHan/intro-typescript-playground)
+#### TypeScript Tutorial
+> https://www.slideshare.net/JaeYeopHan/intro-typescript-playground
 
-> I taught TypeScript in-house study.
+I taught TypeScript in-house study.
+
 
 ---
+
+
+### :melon: Skills
+
+> TypeScript, HTML/CSS/JavaScript(ES6+), Node.js, git.
+
+
+---
+
 
 ### :peach: Education
 
