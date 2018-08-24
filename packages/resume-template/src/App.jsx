@@ -15,7 +15,7 @@ export default class App extends Component {
   state = {
     isLoading: true,
     classNames: "",
-    language: "ENG",
+    language: "KOR",
   };
 
   customComponents = {
