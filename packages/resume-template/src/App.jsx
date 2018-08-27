@@ -59,13 +59,16 @@ export default class App extends Component {
   }
 
   async reduceCSS() {
+    const { language } = this.state;
     const base = ["margin-top-large", "margin-bottom-large"];
     const results = await pipe(
       base => (window.innerWidth > MIN_WIDTH ? base.concat("container") : base),
       await this.applyTheme.bind(this),
     )(base);
 
-    return results.join(" ");
+    return language === "KOR"
+      ? results.concat("korean").join(" ")
+      : results.join(" ");
   }
 
   buildResumeTemplate() {

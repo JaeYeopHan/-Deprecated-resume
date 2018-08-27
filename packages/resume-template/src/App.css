@@ -5,3 +5,7 @@ body {
 .container {
   letter-spacing: 0.7px;
 }
+
+.korean {
+  font-family: "Nanum Gothic", sans-serif !important;
+}
