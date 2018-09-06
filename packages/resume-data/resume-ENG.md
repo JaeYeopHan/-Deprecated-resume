@@ -89,7 +89,7 @@ I'm FrontEnd engineer who loves TypeScript, VanillaJS and React. I have recently
 
 #### octodirect - chrome extension
 
-- Chrome web store link: (https://chrome.google.com/webstore/detail/octodirect/fmhgcellhhleloebmhbmdncogdddkkag?hl=ko)
+- Chrome web store link: (http://bit.ly/2wL9Iwv)
 - GitHub repository link : (https://github.com/JaeYeopHan/octodirect)
 - React, TypeScript, Redux, Redux-saga
 
