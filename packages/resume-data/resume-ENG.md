@@ -39,7 +39,7 @@ I'm FrontEnd engineer who loves TypeScript, VanillaJS and React. I have recently
 | **period**      | 17.01 ~ 17.02                                            |
 | **position**    | BackEnd Developer Intern                                 |
 | **description** | Develop redis operation chatbot based on LINE messenger. |
-| **project**     | REDIE-OPS-BOT(http://bit.ly/2BzJiUl)                     |
+| **project**     | REDIS-OPS-BOT(http://bit.ly/2BzJiUl)                     |
 |                 |                                                          |
 
 ---
@@ -53,6 +53,7 @@ I'm FrontEnd engineer who loves TypeScript, VanillaJS and React. I have recently
 - Participated in this project as a front-end engineer
 - TypeScript, Webpack, lerna
 - UX & Performance (Scroll Restoration / image, script lazy load / lazy initialize component)
+- Research on project retrospective (article: http://bit.ly/2oL6OUX)
 
 #### Development Environment scaffolding tool
 

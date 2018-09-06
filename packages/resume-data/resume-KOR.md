@@ -39,7 +39,7 @@
 | **period**      | 17.01 ~ 17.02                                                                       |
 | **position**    | 백엔드 엔지니어 인턴                                                                         |
 | **description** | 2달 동안의 인턴 기간동안 라인 메신저를 기반으로 동작하는 챗봇을 만들었습니다. Redis 저장소에 저장되어 있는 데이터를 조회하기 위한 챗봇입니다. |
-| **project**     | REDIE-OPS-BOT(http://bit.ly/2BzJiUl)                                                |
+| **project**     | REDIS-OPS-BOT(http://bit.ly/2BzJiUl)                                                |
 |                 |                                                                                     |
 
 ---
@@ -53,8 +53,7 @@
 - 프론트엔드 엔지니어로 프로젝트 참여
 - TypeScript, Webpack, lerna
 - UX & 성능 고려 (스크롤 복원 / 이미지, 스크립트 레이지 로딩 / 컴포넌트 레이지 초기화)
-
-
+- 프로젝트 회고에 대한 연구 및 진행 (article: http://bit.ly/2oL6OUX)
 
 #### Development Environment scaffolding tool
 
