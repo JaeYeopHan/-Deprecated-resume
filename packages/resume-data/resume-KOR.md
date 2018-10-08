@@ -115,12 +115,12 @@
 
 ### :cherries: Activity
 
-#### [DEVLOG Facebook page](https://www.facebook.com/Jbee.dev/)
+#### [FELOG Facebook page](https://www.facebook.com/Jbee.dev/)
 
 |                 |                                                                            |
 | --------------: | -------------------------------------------------------------------------- |
 | **period**      | 17.03 ~ current                                                            |
-| **description** | DEVLOG라는 이름의 페이스북 페이지를 운영하고 있습니다. 주로 주니어 개발자, 프론트엔드 개발자를 위한 좋은 자료들을 공유합니다. |
+| **description** | FELOG라는 이름의 페이스북 페이지를 운영하고 있습니다. 주로 주니어 개발자, 프론트엔드 개발자를 위한 좋은 자료들을 공유합니다. |
 |                 |                                                                            |
 
 

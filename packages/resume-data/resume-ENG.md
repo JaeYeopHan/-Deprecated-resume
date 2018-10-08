@@ -115,12 +115,12 @@ Introduce "development" that I learned in the field. I define 'coding' to be nar
 
 ### :cherries: Activity
 
-#### [DEVLOG Facebook page](https://www.facebook.com/Jbee.dev/)
+#### [FELOG Facebook page](https://www.facebook.com/Jbee.dev/)
 
 |                 |                                                                                                                                                                    |
 | --------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **period**      | 17.03 ~ current                                                                                                                                                    |
-| **description** | I have a Facebook page called DEVLOG that contains development resources for preliminary and junior developers, as well as tutorials related to the web front end. |
+| **description** | I have a Facebook page called FELOG that contains development resources for preliminary and junior developers, as well as tutorials related to the web front end. |
 |                 |                                                                                                                                                                    |
 
 
