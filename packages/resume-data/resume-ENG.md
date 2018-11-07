@@ -20,11 +20,19 @@ I'm FrontEnd engineer who loves TypeScript, VanillaJS and React. I have recently
 
 ### :lemon: Work Experiences
 
+#### LINE Financial Corporation
+
+|                 |                   |
+| --------------: | ----------------- |
+| **period**      | 17.07 ~ 18.10     |
+| **position**    | FrontEnd Engineer |
+| **description** |
+
 #### NAVER Corporation
 
 |                 |                                                                                                                                                                             |
 | --------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **period**      | 17.07 ~ Current                                                                                                                                                             |
+| **period**      | 17.07 ~ 18.10                                                                                                                                                               |
 | **position**    | FrontEnd Engineer                                                                                                                                                           |
 | **description** | Currently, develop UI of integrated search belonging to FEplatform team. I have developed a service called SmartAround, SmartVoice, development-environment-generator tool. |
 | projects        | SmartAround, SmartVoice, generator-sau-webpack                                                                                                                              |
@@ -117,11 +125,11 @@ Introduce "development" that I learned in the field. I define 'coding' to be nar
 
 #### [FELOG Facebook page](https://www.facebook.com/Jbee.dev/)
 
-|                 |                                                                                                                                                                    |
-| --------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **period**      | 17.03 ~ current                                                                                                                                                    |
+|                 |                                                                                                                                                                   |
+| --------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **period**      | 17.03 ~ current                                                                                                                                                   |
 | **description** | I have a Facebook page called FELOG that contains development resources for preliminary and junior developers, as well as tutorials related to the web front end. |
-|                 |                                                                                                                                                                    |
+|                 |                                                                                                                                                                   |
 
 
 #### [FEConf Organizer](https://2017.feconf.kr/)
