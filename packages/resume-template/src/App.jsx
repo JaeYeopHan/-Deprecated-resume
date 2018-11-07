@@ -40,7 +40,7 @@ export default class App extends Component {
 
   async componentDidMount() {
     const classNames = await this.reduceCSS();
-    await delay(3000);
+    await delay(2000);
 
     this.setState({
       isLoading: false,
