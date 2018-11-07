@@ -20,7 +20,7 @@
 
 ### :lemon: Work Experiences
 
-#### LINE Financial Corporation
+#### LINE Financial Plus Corporation
 
 |                 |                   |
 | --------------: | ----------------- |
@@ -40,7 +40,7 @@
 
 <br/>
 
-#### LINE Corporation
+#### LINE Plus Corporation
 
 |                 |                                                                                     |
 | --------------: | ----------------------------------------------------------------------------------- |

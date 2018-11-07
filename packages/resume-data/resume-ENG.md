@@ -20,7 +20,7 @@ I'm FrontEnd engineer who loves TypeScript, VanillaJS and React. I have recently
 
 ### :lemon: Work Experiences
 
-#### LINE Financial Corporation
+#### LINE Financial Plus Corporation
 
 |                 |                   |
 | --------------: | ----------------- |
@@ -40,7 +40,7 @@ I'm FrontEnd engineer who loves TypeScript, VanillaJS and React. I have recently
 
 <br/>
 
-#### LINE Corporation
+#### LINE Plus Corporation
 
 |                 |                                                          |
 | --------------: | -------------------------------------------------------- |
