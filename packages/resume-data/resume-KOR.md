@@ -119,6 +119,12 @@
 
 현업에서 배운 '개발'을 소개했습니다. '코딩'을 좁은 범위로 정의하고 개발이라는 과정에 있어서 코딩은 일부분이라는 내용입니다. 여기서 다 나아가 함께 일하고 싶은 개발자는 무엇일까에 대해 이야기를 나눴습니다.
 
+#### GDG Devfest Seoul 2018 - Chrome Devtools를 활용한 웹 프론트엔드 성능 측정과 개선
+
+> https://slides.com/jbee/devfest_seoul_2018_performance_optimization_with_chrome_devtools
+
+웹 프론트엔드 성능과 관련하여 크게 측정과 개선 두 부분을 다뤘습니다. 크롬 개발자 도구에 포함되어 있는 audits를 활용하여 웹 애플리케이션의 성능을 측정하고 개선할 수 있는 몇몇의 요소들을 정리했습니다.
+
 ---
 
 ### :cherries: Activity

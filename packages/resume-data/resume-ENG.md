@@ -119,6 +119,12 @@ Versioning and distribution of Chrome extensions is cumbersome. So I am using my
 
 Introduce "development" that I learned in the field. I define 'coding' to be narrower and share what I felt that 'coding is only part of the process of developing something.' If possible, I will talk about the direction to move towards 'the developer we want to work with' based on this content.
 
+#### GDG Devfest Seoul 2018 - Web Front-End performance with Chrome Devtools
+
+> https://slides.com/jbee/devfest_seoul_2018_performance_optimization_with_chrome_devtools
+
+There are two major areas of measurement and improvement associated with Web front-end performance. We've compiled some of the elements that can be used to measure and improve the performance of your web application by using the audits included in Chrome developer tools.
+
 ---
 
 ### :cherries: Activity
