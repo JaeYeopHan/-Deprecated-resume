@@ -183,7 +183,7 @@ I taught TypeScript in-house study.
 
 ### :melon: Skills
 
-> TypeScript, HTML/CSS/JavaScript(ES6+), Webpack, Node.js, git.
+> TypeScript, HTML5/CSS3/JavaScript(ES6+), React, Vue, Jest, Webpack, Node.js, git.
 
 
 ---
