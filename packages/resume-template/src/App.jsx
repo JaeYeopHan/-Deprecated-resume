@@ -22,7 +22,8 @@ export default class App extends Component {
     h4: Components.SubTitle,
     hr: Components.DivisionLine,
     inlineCode: Components.Badge,
-    li: Components.WordBreakAll,
+    li: Components.WordBreakAllLI,
+    a: Components.WordBreakAllA,
   };
 
   constructor() {

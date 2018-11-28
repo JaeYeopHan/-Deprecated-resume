@@ -4,4 +4,4 @@ export { Button } from "./Button/Button";
 export { Loading } from "./Loading/Loading";
 export { Badge } from "./Badge/Badge";
 export { BadgeSecondary } from "./Badge/BadgeSecondary";
-export { WordBreakAll } from "./WordBreakAll/WordBreakAll";
+export { WordBreakAllLI, WordBreakAllA } from "./WordBreakAll/WordBreakAll";
