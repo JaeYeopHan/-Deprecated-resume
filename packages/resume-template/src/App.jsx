@@ -115,13 +115,16 @@ export default class App extends Component {
       />
     );
     const Resume = (
-      <div className={classNames}>
-        {LanguageButtons}
-        {ExportPdfButton}
-        <div ref={ref => (this.resumeTemplate = ref)}>
-          {this.buildResumeTemplate()}
+      <React.Fragment>
+        <Components.TopBorder />
+        <div className={classNames}>
+          {LanguageButtons}
+          {ExportPdfButton}
+          <div ref={ref => (this.resumeTemplate = ref)}>
+            {this.buildResumeTemplate()}
+          </div>
         </div>
-      </div>
+      </React.Fragment>
     );
 
     return isLoading ? LoadingTemplate : Resume;

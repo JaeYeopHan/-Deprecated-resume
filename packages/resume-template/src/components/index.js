@@ -5,3 +5,4 @@ export { Loading } from "./Loading/Loading";
 export { Badge } from "./Badge/Badge";
 export { BadgeSecondary } from "./Badge/BadgeSecondary";
 export { WordBreakAllLI, WordBreakAllA } from "./WordBreakAll/WordBreakAll";
+export { TopBorder } from "./TopBorder/TopBorder"
