@@ -1,6 +1,4 @@
-## Resume
-
-### Han Jae Yeop (Jbee)
+## Han Jae Yeop (Jbee)
 
 <div align="center">
 

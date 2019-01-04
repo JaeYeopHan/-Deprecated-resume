@@ -1,6 +1,4 @@
-## 이력서
-
-### 한재엽 (Jbee)
+## 한재엽 (Jbee)
 
 <div align="center">
 
